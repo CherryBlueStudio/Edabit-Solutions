@@ -1,3 +1,6 @@
+/* Write a function that removes any non-letters from a string, 
+returning a well-known film title. */
+
 using System;
 using System.Text;
 public class Program

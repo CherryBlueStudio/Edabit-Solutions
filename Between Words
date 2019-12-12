@@ -1,3 +1,6 @@
+/* Write a function that takes three string arguments (first, last, word) and returns true 
+if (when alphabetically sorted) word is found between first and last. */
+
 public class Program
 {
     public static bool isBetween(string first, string last, string word)

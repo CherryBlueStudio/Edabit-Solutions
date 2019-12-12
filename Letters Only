@@ -1,0 +1,16 @@
+using System;
+using System.Text;
+public class Program
+{
+    public static string LettersOnly(string str)
+    {
+    StringBuilder build = new StringBuilder();
+    Char[] letters = str.ToCharArray();
+			
+    foreach (char letter in letters)
+      if (Char.IsLetter(letter))
+        build.Append(letter);
+
+    return build.ToString();
+    }
+}

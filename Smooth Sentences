@@ -1,3 +1,7 @@
+/* Carlos is a huge fan of something he calls smooth sentences. 
+A smooth sentence is one where the last letter of each word is identical 
+to the first letter the following word. */
+
 using System;
 public class Program 
 {

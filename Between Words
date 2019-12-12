@@ -1,0 +1,10 @@
+public class Program
+{
+    public static bool isBetween(string first, string last, string word)
+    {
+			string[] check = new string[] {first, last, word};
+			System.Array.Sort(check);
+			
+			return check[1] == word;
+    }
+}

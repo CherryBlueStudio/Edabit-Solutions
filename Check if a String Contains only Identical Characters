@@ -1,15 +1,17 @@
+// Write a function that returns true if all characters in a string are identical and false otherwise.
+
 public class Program
 {
     public static bool isIdentical(string str)
     {
-			char character = str[0];
-			for (int i = 1; i < str.Length; i++)
-			{
-				if (character == str[i])
-					character = str[i];
-				else
-					return false;;
-			}
-			return true;
+    char character = str[0];
+    for (int i = 1; i < str.Length; i++)
+    {
+	if (character == str[i])
+		character = str[i];
+	else
+		return false;;
+	}
+	return true;
     }
 }

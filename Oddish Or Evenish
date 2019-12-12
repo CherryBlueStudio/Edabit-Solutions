@@ -1,0 +1,23 @@
+public class Program 
+{
+    public static string OddishOrEvenish(int num) 
+    {
+       string str = num.ToString();
+       int conDig = 0;
+       int result = 0;
+
+       for (int i = 0; i < str.Length; i++)
+       {
+          conDig = str[i];
+          result += conDig;
+       }
+       if (result % 2 == 0)
+       {
+          return "Evenish";
+       }
+       else
+       {
+          return "Oddish";
+       }
+    }
+}

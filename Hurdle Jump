@@ -1,0 +1,16 @@
+/* Create a function that takes an array of hurdle heights and a jumper's jump height, 
+and determine whether or not the hurdler can clear all the hurdles. */
+
+public class Program
+{
+	public static bool hurdleJump(int[] hurdles, int jumpHeight)
+	{
+		bool result = true;
+		foreach (int hurdle in hurdles)
+		{
+			if (hurdle > jumpHeight)
+				result = false;
+		}
+		return result;
+	}
+}

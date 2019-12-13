@@ -1,0 +1,18 @@
+// Create a function that takes a string and returns a string in which each character is repeated once.
+
+public class Program 
+{
+    public static string DoubleChar(string str) 
+    {
+		System.Text.StringBuilder builder = new System.Text.StringBuilder();
+		string result;
+		
+		for (int i = 0; i < str.Length; i++)
+		{
+			builder.Append(str[i]);
+			builder.Append(str[i]);
+		}
+		result = builder.ToString();
+		return result;
+    }
+}

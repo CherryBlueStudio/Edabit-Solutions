@@ -1,0 +1,16 @@
+Create a function that takes an array of names and returns an array with the first letter capitalized.
+
+using System.Globalization;
+public class Program 
+{
+    public static string[] CapMe(string[] arr) 
+    {
+      string[] result = new string[arr.Length];
+			TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+			
+			for (int i = 0; i < arr.Length; i++)
+				result[i] = textInfo.ToTitleCase(arr[i].ToLower());
+			
+			return result;
+    }
+}

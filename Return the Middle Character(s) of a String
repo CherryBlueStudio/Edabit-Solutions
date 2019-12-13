@@ -1,0 +1,26 @@
+/* Create a function that takes a string and returns the middle character(s). 
+If the word's length is odd, return the middle character. If the word's length is even, 
+return the middle two characters. */
+
+public class Program 
+{
+    public static string GetMiddle(string str) 
+		{
+			string result = str;
+			int num = 0;
+			if (str.Length > 1)
+			{
+				if (str.Length % 2 == 0)
+				{
+					num = str.Length / 2;
+					result = str[num - 1].ToString() + str[num].ToString();
+				}
+				if (str.Length % 2 != 0)
+				{
+					num = (str.Length - 1) / 2;
+					result = str[num].ToString();
+				}
+			}
+			return result;
+		}
+}

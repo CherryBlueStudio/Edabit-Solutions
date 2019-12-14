@@ -1,0 +1,18 @@
+/* Create a function that takes a two-digit number and determines 
+if it's the largest of two possible digit swaps. */
+
+public class Program
+{
+  public static bool LargestSwap(int num)
+  {
+		string number = num.ToString();
+		char[] numbo = number.ToCharArray();
+		
+		if (numbo[1] > numbo[0])
+		{
+			return false;
+		}
+		
+		return true;
+	}
+}

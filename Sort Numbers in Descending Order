@@ -1,0 +1,18 @@
+/* Create a function that takes any nonnegative number as an argument and 
+return it with it's digits in descending order. */
+
+using System;
+public class Program
+{
+	public static int DecendingOrder(int num)
+	{
+		string input = num.ToString();
+		char[] numbers = input.ToCharArray();
+		
+		Array.Sort(numbers);
+		Array.Reverse(numbers);
+		String result = new String(numbers);
+		
+		return Convert.ToInt32(result);
+	}
+}

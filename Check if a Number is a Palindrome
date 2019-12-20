@@ -1,0 +1,16 @@
+// Create a function that returns true if a number is a palindrome.
+
+using System;
+public class Program
+{
+    public static bool IsPalindrome(int num)
+    {
+			string word = num.ToString();
+			char[] number = word.ToCharArray();
+      
+			Array.Reverse(number);
+			String wordReversed = new String(number);
+			int numReversed = Convert.ToInt32(wordReversed);
+      
+			return num == numReversed;
+    }
